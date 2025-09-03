@@ -1,0 +1,139 @@
+/* Teller Portal Layout Styles */
+.teller-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.teller-sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg, #1a1a1a); /* Dark background */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.teller-sidebar-header {
+  margin-bottom: 30px;
+}
+
+.teller-sidebar-header h3 {
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.teller-sidebar-header p {
+  font-size: 14px;
+  color: #bdc3c7;
+  margin: 0;
+}
+
+.teller-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teller-nav-item {
+  margin-bottom: 10px;
+}
+
+.teller-nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.teller-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.teller-nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.teller-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--bg-primary, #f5f7fa);
+}
+
+.teller-logout-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--logout-bg, #e74c3c);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.teller-logout-btn:hover {
+  background-color: var(--logout-hover-bg, #c0392b);
+}
+
+/* Teller Dashboard Specific Styles */
+.teller-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .teller-layout {
+    flex-direction: column;
+  }
+  
+  .teller-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .teller-main-content {
+    padding: 15px;
+  }
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .teller-sidebar {
+  background-color: var(--sidebar-bg-dark, #2d3748);
+}
+
+[data-theme="dark"] .teller-main-content {
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .admin-sidebar {
+  background-color: var(--sidebar-bg-dark, #2d3748);
+}
+
+[data-theme="dark"] .admin-main-content {
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .admin-stat-card,
+[data-theme="dark"] .admin-content-card {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-stat-label {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .admin-table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .admin-table tr:hover {
+  background-color: var(--bg-tertiary);
+}

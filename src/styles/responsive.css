@@ -1,0 +1,152 @@
+/* Responsive Design Improvements */
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-nav li {
+    margin: 5px 0;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .form-control {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .stat-value {
+    font-size: 24px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quick-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .btn,
+  .modal,
+  .loading {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .card {
+    border: 2px solid #000;
+  }
+
+  .btn {
+    border: 2px solid #000;
+  }
+}

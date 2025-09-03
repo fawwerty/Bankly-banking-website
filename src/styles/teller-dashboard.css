@@ -1,0 +1,1358 @@
+/* Teller Dashboard Styles */
+.teller-dashboard {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.teller-info {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea20, #764ba220);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #666;
+}
+
+/* Recent Transactions */
+.recent-transactions {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.recent-transactions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.transaction-table {
+  overflow-x: auto;
+}
+
+.transaction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08

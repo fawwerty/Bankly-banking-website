@@ -1,0 +1,255 @@
+/* Dark Theme Styles */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e8e8e8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --accent-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  
+  /* Additional variables for enhanced theming */
+  --primary: #1890ff;
+  --primary-dark: #096dd9;
+  --primary-hover: #40a9ff;
+  --surface: #ffffff;
+  --border: #e0e0e0;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --error-bg: #f8d7da;
+  --error-text: #721c24;
+  --error-border: #f5c6cb;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-tertiary: #999999;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --accent-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  
+  /* Additional variables for enhanced theming */
+  --primary: #1890ff;
+  --primary-dark: #096dd9;
+  --primary-hover: #40a9ff;
+  --surface: #2d2d2d;
+  --border: #404040;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --error-bg: #2a0d0d;
+  --error-text: #ff4d4f;
+  --error-border: #5c1a1a;
+}
+
+/* Global styles for dark theme */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar dark theme */
+.navbar {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Cards dark theme */
+.card, .stat-card, .summary-card, .breakdown-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+/* Tables dark theme */
+table {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+th, td {
+  border-color: var(--border-color);
+}
+
+th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* Forms dark theme */
+input, select, textarea {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+/* Buttons dark theme */
+.btn, .button, button {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn:hover, .button:hover, button:hover {
+  background-color: var(--bg-secondary);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+/* Modal dark theme */
+.modal, .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+/* Sidebar dark theme */
+.sidebar {
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+}
+
+/* Dropdown dark theme */
+.dropdown {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  color: var(--text-primary);
+}
+
+.theme-toggle:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Links dark theme */
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+  opacity: 0.8;
+}
+
+/* Status badges dark theme */
+.status-badge {
+  color: var(--text-primary);
+}
+
+/* Loading states dark theme */
+.loading {
+  background-color: var(--bg-secondary);
+}
+
+/* Scrollbar dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Form container styles for dark theme */
+.form-container {
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.form-input, .form-select {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.form-input:focus, .form-select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.form-button {
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  opacity: 0.9;
+}
+
+.form-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--success-color);
+  color: white;
+  border-radius: 4px;
+}
