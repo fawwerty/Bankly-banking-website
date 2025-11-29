@@ -2,6 +2,7 @@
   "name": "banking-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://fawwerty.github.io/Bankly-banking-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,19 +13,21 @@
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@fingerprintjs/fingerprintjs": "^4.6.2",
-    "autoprefixer": "^10.4.22",
     "axios": "^1.4.0",
     "chart.js": "^4.5.0",
     "firebase": "^12.1.0",
-    "postcss": "^8.5.6",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
     "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.22",
     "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
     "vite": "^7.1.2"
   }
 }
