@@ -5,6 +5,8 @@
 
 # production
 /dist
+/assets
+index.html
 
 # misc
 .DS_Store
