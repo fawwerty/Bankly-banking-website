@@ -6,8 +6,8 @@
 # production
 /dist
 /assets
-index.html
 
+# keep index.html tracked (it's the source template used by Vite dev/build)
 # misc
 .DS_Store
 .env.local
